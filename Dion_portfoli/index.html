@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dion Rojan | Portfolio</title>
+    <meta name="description" content="Portfolio of Dion Rojan, an aspiring computer science engineer passionate about open source and community-driven projects.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="logo">DR<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="greeting">Hi, I am</h2>
+            <h1 class="name">Dion Rojan</h1>
+            <h3 class="role">Computer Science Student & Developer</h3>
+            <p class="summary">
+                I leverage my passion for open-source development and foundational computer science skills to collaborate on community-driven projects, share knowledge, and build impactful software.
+            </p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://github.com/dionrojan" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="avatar-placeholder glass">
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2 class="section-title">Career Overview</h2>
+        <div class="about-container glass">
+            <p>
+                I am a passionate computer science student focused on open-source development and creating impactful software. With a solid foundation in programming and a keen eye for problem-solving, I actively participate in hackathons and community-driven projects. I am constantly learning new technologies to build modern, efficient, and user-centric applications.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item glass">
+                <div class="timeline-date">2025 - 2026 (2nd Year)</div>
+                <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
+                <p class="timeline-subtitle">Amal Jyothi College of Engineering</p>
+            </div>
+            <div class="timeline-item glass">
+                <div class="timeline-date">2023 - 2025</div>
+                <h3 class="timeline-title">12th Grade & DCA</h3>
+                <p class="timeline-subtitle">St. Thomas HSS</p>
+            </div>
+            <div class="timeline-item glass">
+                <div class="timeline-date">2022</div>
+                <h3 class="timeline-title">10th Grade</h3>
+                <p class="timeline-subtitle">NPSE</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Programming Languages</h3>
+                <p>C/C++, Python, Java, GD Script</p>
+            </div>
+            <div class="skill-card glass">
+                <div class="skill-icon"><i class="fas fa-wrench"></i></div>
+                <h3>Tools & Frameworks</h3>
+                <p>Godot Engine, Git, GitHub, VS Code, PyQt5</p>
+            </div>
+            <div class="skill-card glass">
+                <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                <h3>Systems & Environments</h3>
+                <p>Linux (Fedora, Mint), KDE Customization, Shell Scripting</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass">
+                <div class="project-img-wrapper">
+                    <img src="assets/salon_app.jpg" alt="Salon App" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Salon Appointment App</h3>
+                    <p>A mobile prototype for booking salon appointments, developed as part of a comprehensive college assignment. Features a smooth UI and booking flows.</p>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img-wrapper">
+                    <img src="assets/weather_app.jpg" alt="Weather App" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>Weather Application</h3>
+                    <p>Engineered a functional weather app utilizing Python and the PyQt5 framework, providing real-time forecasting data in an elegant interface.</p>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img-wrapper">
+                    <img src="assets/godot_game.jpg" alt="2D Fighting Game" class="project-img">
+                </div>
+                <div class="project-info">
+                    <h3>2D Fighting Game</h3>
+                    <p>Actively developing a dynamic 2D fighting game featuring custom combat mechanics using the Godot Engine and GD Script.</p>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img-wrapper">
+                    <div class="placeholder-img"><i class="fas fa-map-marked-alt"></i></div>
+                </div>
+                <div class="project-info">
+                    <h3>Tourist Location Tracker</h3>
+                    <p>Prototyped a location tracking application for tourists during a hackathon with team "Digital Voyagers" (Sept 2025).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-card glass">
+            <p class="contact-desc">Currently open to new opportunities, collaborations, and open-source contributions. Feel free to reach out!</p>
+            <div class="contact-details">
+                <a href="mailto:contact@dionrojan.com" class="contact-link"><i class="fas fa-envelope"></i> dionrojan@example.com</a>
+                <a href="tel:+918921691192" class="contact-link"><i class="fas fa-phone-alt"></i> +91 8921691192</a>
+                <div class="contact-link"><i class="fas fa-map-marker-alt"></i> Koovappally, PIN: 686518</div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/dionrojan" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dion Rojan. Built with passion and open-source spirit.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
