@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #0f172a;
+    --bg-color: rgba(15, 23, 42, 0.75);
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
     --accent-color: #3b82f6;
@@ -27,6 +27,18 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+}
+
+.bg-image {
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    width: 110vw;
+    height: 110vh;
+    background: url('assets/background.jpg') center/cover no-repeat;
+    filter: blur(25px);
+    z-index: -3;
+    opacity: 0.8;
 }
 
 /* Background Blobs for styling */
