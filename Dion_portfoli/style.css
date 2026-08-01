@@ -348,9 +348,17 @@ body {
 }
 
 .skill-icon {
-    font-size: 3rem;
-    color: var(--accent-color);
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px auto;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: var(--text-secondary);
 }
 
 .skill-card h3 {
