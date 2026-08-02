@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Binoy | B.Tech CSE & Cybersecurity Portfolio</title>
+    <meta name="description" content="Portfolio of Joel Binoy, B.Tech Computer Science & Engineering student at Amal Jyothi College of Engineering, Kanjirappally with passion for Cybersecurity, Python, SQL, C, and Java.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="cyber-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-prefix">&lt;</span>JoelBinoy<span class="logo-suffix"> /&gt;</span>
+                <span class="logo-tag">CSE</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user-ninja"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+                <a href="#certificates" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a>
+                <a href="#terminal" class="nav-link"><i class="fa-solid fa-terminal"></i> Cyber Console</a>
+                <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://www.linkedin.com/in/joel-binoy-144141279" target="_blank" rel="noopener" class="social-icon-link" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/joelbinoy2021-sketch" target="_blank" rel="noopener" class="social-icon-link" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="status-dot pulse"></span> B.Tech CSE @ Amal Jyothi College of Engineering
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I am <span class="gradient-text glow-effect">Joel Binoy</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="typing-prefix">&gt; </span>
+                        <span id="typing-text" class="typing-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Computer Science & Engineering student with a strong interest in <strong class="highlight-cyan">Cybersecurity</strong> and software development. Core skills include <span class="skill-badge">Python</span> <span class="skill-badge">SQL</span> <span class="skill-badge">C</span> and <span class="skill-badge">Java</span>.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary glow-btn">
+                            <i class="fa-solid fa-rocket"></i> Explore SkillSprint & Projects
+                        </a>
+                        <a href="#certificates" class="btn btn-secondary glow-border">
+                            <i class="fa-solid fa-award"></i> View My Certifications
+                        </a>
+                    </div>
+
+                    <div class="hero-social-links">
+                        <span class="social-label">Connect with me:</span>
+                        <a href="https://www.linkedin.com/in/joel-binoy-144141279" target="_blank" rel="noopener" class="btn-social linkedin">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/joelbinoy2021-sketch" target="_blank" rel="noopener" class="btn-social github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="mailto:joelbinoy2021@gmail.com" class="btn-social email">
+                            <i class="fa-solid fa-envelope"></i> joelbinoy2021@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-card-container">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-box">
+                            <img src="assets/joel.jpg" alt="Joel Binoy - B.Tech CSE Student" class="avatar-image">
+                            <div class="avatar-overlay"></div>
+                            <div class="avatar-badge">
+                                <i class="fa-solid fa-shield-halved"></i> Cybersecurity Enthusiast
+                            </div>
+                        </div>
+                        <div class="tech-floating-tag tag-python">
+                            <i class="fa-brands fa-python"></i> Python
+                        </div>
+                        <div class="tech-floating-tag tag-sql">
+                            <i class="fa-solid fa-database"></i> SQL
+                        </div>
+                        <div class="tech-floating-tag tag-c">
+                            <span class="c-icon">C</span> Language
+                        </div>
+                        <div class="tech-floating-tag tag-java">
+                            <i class="fa-brands fa-java"></i> Java
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-down-btn" aria-label="Scroll Down">
+                <span class="mouse-icon"><span class="wheel"></span></span>
+                <span class="scroll-text">SCROLL DOWN</span>
+            </a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;WHO_AM_I&gt;</span>
+                    <h2 class="section-title">About <span class="gradient-text">Joel Binoy</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-about-card glass-card">
+                        <div class="card-corner corner-tl"></div>
+                        <div class="card-corner corner-tr"></div>
+                        <div class="card-corner corner-bl"></div>
+                        <div class="card-corner corner-br"></div>
+                        
+                        <div class="about-icon-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>B.Tech CSE Student</h3>
+                        </div>
+
+                        <p class="about-text">
+                            Hi, I am <strong>Joel Binoy</strong>, a Computer Science & Engineering student at <strong>Amal Jyothi College of Engineering, Kanjirappally</strong>. 
+                        </p>
+                        <p class="about-text">
+                            I am a CSE student with a keen interest in <strong class="highlight-cyan">Cybersecurity</strong>, software development, database design, and building real-world projects.
+                        </p>
+                        <p class="about-text">
+                            I have practical knowledge in <strong>Python, SQL, C, and Java</strong> and enjoy creating projects like <strong>SkillSprint</strong> while continuously learning and acquiring certificates in tech.
+                        </p>
+
+                        <div class="institution-badge">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <div>
+                                <h4>Amal Jyothi College of Engineering</h4>
+                                <p>Kanjirappally, Kottayam, Kerala • Department of CSE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-highlights-grid">
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon cyan">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Cybersecurity Interest</h3>
+                                <p>Enthusiastic about network security fundamentals, ethical hacking principles, and secure programming.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon green">
+                                <i class="fa-solid fa-code-branch"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Programming Stack</h3>
+                                <p>Hands-on writing clean, structured code in Python, C, Java, and writing database queries in SQL.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon crimson">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Certifications</h3>
+                                <p>Continuously earning certificates to expand technical knowledge and validate skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="highlight-icon purple">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>SkillSprint Creator</h3>
+                                <p>Architect of project solutions focusing on real-world problem solving and interactive learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;TECHNICAL_CAPABILITIES&gt;</span>
+                    <h2 class="section-title">Core <span class="gradient-text">Skills</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Primary Skills Cards -->
+                <div class="primary-skills-grid">
+                    <!-- Python Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon python-bg">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Python</h3>
+                                <span class="skill-tag">Scripting & Logic</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Used for scripting, building automation tools, data manipulation, algorithm implementation, and rapid project prototyping.
+                        </p>
+                        <div class="skill-topics">
+                            <span><i class="fa-solid fa-check"></i> Automation</span>
+                            <span><i class="fa-solid fa-check"></i> Data Structures</span>
+                            <span><i class="fa-solid fa-check"></i> Utility Scripts</span>
+                        </div>
+                    </div>
+
+                    <!-- SQL Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon sql-bg">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>SQL</h3>
+                                <span class="skill-tag">Database & Queries</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Proficient in relational database design, writing complex SQL queries, JOINs, data indexing, and table normalization.
+                        </p>
+                        <div class="skill-topics">
+                            <span><i class="fa-solid fa-check"></i> Relational Schemas</span>
+                            <span><i class="fa-solid fa-check"></i> JOIN Queries</span>
+                            <span><i class="fa-solid fa-check"></i> Data Security</span>
+                        </div>
+                    </div>
+
+                    <!-- C Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon c-bg">
+                                <span class="c-badge">C</span>
+                            </div>
+                            <div class="skill-info">
+                                <h3>C Language</h3>
+                                <span class="skill-tag">System Programming</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Strong understanding of pointers, memory management, low-level data structures, and foundational computer science logic.
+                        </p>
+                        <div class="skill-topics">
+                            <span><i class="fa-solid fa-check"></i> Pointer Logic</span>
+                            <span><i class="fa-solid fa-check"></i> Memory Allocation</span>
+                            <span><i class="fa-solid fa-check"></i> Core Algorithms</span>
+                        </div>
+                    </div>
+
+                    <!-- Java Card -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon java-bg">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Java</h3>
+                                <span class="skill-tag">Object-Oriented Programming</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">
+                            Object-Oriented Programming (OOP) principles, Encapsulation, Inheritance, Polymorphism, and structured application development.
+                        </p>
+                        <div class="skill-topics">
+                            <span><i class="fa-solid fa-check"></i> OOP Architecture</span>
+                            <span><i class="fa-solid fa-check"></i> Class Hierarchy</span>
+                            <span><i class="fa-solid fa-check"></i> Robust Software</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Tools Grid -->
+                <div class="secondary-skills-box glass-card">
+                    <h3 class="box-title"><i class="fa-solid fa-toolbox"></i> Complementary Knowledge & Tools</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item"><i class="fa-solid fa-shield-virus"></i> Cybersecurity Fundamentals</div>
+                        <div class="tool-item"><i class="fa-brands fa-git-alt"></i> Git & Version Control</div>
+                        <div class="tool-item"><i class="fa-brands fa-linux"></i> Linux Environment</div>
+                        <div class="tool-item"><i class="fa-solid fa-network-wired"></i> Networking Concepts</div>
+                        <div class="tool-item"><i class="fa-solid fa-sitemap"></i> Data Structures</div>
+                        <div class="tool-item"><i class="fa-brands fa-html5"></i> Web Basics (HTML/CSS/JS)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;PORTFOLIO_WORKS&gt;</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Featured Project: SkillSprint -->
+                    <div class="project-card glass-card featured-project">
+                        <div class="featured-badge"><i class="fa-solid fa-star"></i> Primary Featured Project</div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-cat"><i class="fa-solid fa-person-running"></i> Web & Learning Platform</span>
+                            </div>
+                            <h3 class="project-title">SkillSprint</h3>
+                            <p class="project-summary">
+                                <strong>SkillSprint</strong> is an interactive platform engineered to streamline skill acquisition, sprint tracking, and project-based micro-learning. It breaks down complex technical learning paths into structured sprint goals with milestone tracking.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Sprint Tracking</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary" onclick="openProjectModal('skillsprint')">
+                                    <i class="fa-solid fa-circle-info"></i> Project Overview
+                                </button>
+                                <a href="https://github.com/joelbinoy2021-sketch" target="_blank" rel="noopener" class="btn btn-secondary">
+                                    <i class="fa-brands fa-github"></i> GitHub Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Database Query & Management System -->
+                    <div class="project-card glass-card">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-database"></i> SQL System</span>
+                        </div>
+                        <h3 class="project-title">SQL Database Management System</h3>
+                        <p class="project-summary">
+                            Relational database schema designed for student records, course enrolments, and query optimization using structured SQL scripts and relational mapping.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Relational DB</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary btn-sm" onclick="openProjectModal('sql-db')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certificates" class="section cert-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;CREDENTIALS&gt;</span>
+                    <h2 class="section-title">Certifications <span class="gradient-text">&amp; Achievements</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="cert-header-actions">
+                    <p class="section-intro-text">
+                        Here are the certificates and technical credentials I have earned. You can also add more certificates below:
+                    </p>
+                    <button class="btn btn-primary btn-sm glow-btn" onclick="openAddCertModal()">
+                        <i class="fa-solid fa-plus"></i> Add My Certificate
+                    </button>
+                </div>
+
+                <!-- Dynamic Certificates Grid -->
+                <div class="certs-grid" id="certs-grid-container">
+                    <!-- Loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE TERMINAL SECTION -->
+        <section id="terminal" class="section terminal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;CLI_INTERACTION&gt;</span>
+                    <h2 class="section-title">Interactive <span class="gradient-text">Cyber Console</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="terminal-wrapper glass-card">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-dot red"></span>
+                            <span class="btn-dot yellow"></span>
+                            <span class="btn-dot green"></span>
+                        </div>
+                        <div class="terminal-title"><i class="fa-solid fa-terminal"></i> joel@amal-jyothi-cse:~ (bash)</div>
+                        <div class="terminal-status"><span class="pulse-dot"></span> LIVE</div>
+                    </div>
+
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line welcome-line">
+                            Welcome to <strong>Joel Binoy's Cyber Terminal v1.0.0</strong> [Amal Jyothi CSE System]
+                        </div>
+                        <div class="terminal-line help-hint">
+                            Type <span class="cmd-highlight">help</span> to view available commands.
+                        </div>
+                        <div class="terminal-output-container" id="terminal-output"></div>
+
+                        <form id="terminal-form" class="terminal-input-row" onsubmit="handleTerminalCommand(event)">
+                            <span class="prompt-text">joel@amal-jyothi:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help'...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION WITH FORMSPREE GMAIL INTEGRATION -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&lt;GET_IN_TOUCH&gt;</span>
+                    <h2 class="section-title">Connect with <span class="gradient-text">Joel Binoy</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-column">
+                        <div class="contact-card glass-card">
+                            <h3>Let's Network & Collaborate!</h3>
+                            <p class="contact-desc">
+                                Send a direct message below and it will deliver straight to my Gmail inbox (<strong>joelbinoy2021@gmail.com</strong>)!
+                            </p>
+
+                            <div class="contact-details-list">
+                                <a href="mailto:joelbinoy2021@gmail.com" class="contact-detail-item">
+                                    <div class="detail-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div>
+                                        <span class="detail-label">Email Address</span>
+                                        <span class="detail-value">joelbinoy2021@gmail.com</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/joel-binoy-144141279" target="_blank" rel="noopener" class="contact-detail-item">
+                                    <div class="detail-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                    <div>
+                                        <span class="detail-label">LinkedIn Profile</span>
+                                        <span class="detail-value">linkedin.com/in/joel-binoy-144141279</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://github.com/joelbinoy2021-sketch" target="_blank" rel="noopener" class="contact-detail-item">
+                                    <div class="detail-icon github-icon"><i class="fa-brands fa-github"></i></div>
+                                    <div>
+                                        <span class="detail-label">GitHub Repository</span>
+                                        <span class="detail-value">github.com/joelbinoy2021-sketch</span>
+                                    </div>
+                                </a>
+
+                                <div class="contact-detail-item">
+                                    <div class="detail-icon location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div>
+                                        <span class="detail-label">College Campus</span>
+                                        <span class="detail-value">Amal Jyothi College of Engineering, Kanjirappally</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-column">
+                        <form id="contact-form" action="https://formspree.io/f/mykrakjk" method="POST" class="contact-form glass-card" onsubmit="handleContactSubmit(event)">
+                            <h3><i class="fa-solid fa-paper-plane"></i> Send Direct Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="sender-name">Your Name</label>
+                                <input type="text" id="sender-name" name="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-email">Your Email</label>
+                                <input type="email" id="sender-email" name="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-subject">Subject</label>
+                                <input type="text" id="sender-subject" name="subject" required placeholder="Project Inquiry / Connection">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sender-message">Message</label>
+                                <textarea id="sender-message" name="message" rows="4" required placeholder="Hi Joel, I saw your portfolio and would like to connect..."></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary glow-btn full-width">
+                                <i class="fa-solid fa-paper-plane"></i> Transmit Message to Gmail
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="footer-logo">&lt;JoelBinoy /&gt;</a>
+                <p>B.Tech CSE Student • Amal Jyothi College of Engineering, Kanjirappally</p>
+            </div>
+            <div class="footer-center">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/joel-binoy-144141279" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/joelbinoy2021-sketch" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="mailto:joelbinoy2021@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Joel Binoy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DIALOG FOR CERTIFICATES & PROJECTS -->
+    <div id="info-modal" class="modal-backdrop hidden" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-box glass-card">
+            <button class="modal-close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-content" class="modal-content-area"></div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
